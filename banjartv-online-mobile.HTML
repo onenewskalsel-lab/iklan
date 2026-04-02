@@ -1,0 +1,1338 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="id"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;title&gt;BanjarTV - Televisi Banjar&lt;/title&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;family=Noto+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.jsdelivr.net/npm/hls.js@latest"&gt;&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;style&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>:root {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--primary: #D32F2F;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--primary-dark: #B71C1C;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--primary-light: #EF5350;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--bg-dark: #0D0D0D;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--bg-card: #1A1A1A;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--bg-card-hover: #242424;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--bg-surface: #141414;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--text-primary: #FFFFFF;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--text-secondary: #9E9E9E;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--text-muted: #666666;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--accent-gold: #FFB300;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--border: #2A2A2A;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--live-red: #FF1744;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--green: #4CAF50;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>--gradient-red: linear-gradient(135deg, #D32F2F 0%, #B71C1C 100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>* { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Noto Sans', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-dark);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-primary);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>max-width: 480px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>min-height: 100vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-x: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Status Bar */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.status-bar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; justify-content: space-between; align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px 16px; background: #000; font-size: 12px; font-weight: 500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky; top: 0; z-index: 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.status-bar .time { font-weight: 600; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.status-bar .icons { display: flex; gap: 6px; align-items: center; font-size: 11px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Header */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--gradient-red); padding: 12px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: sticky; top: 32px; z-index: 99;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 20px rgba(211,47,47,0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .logo-area { display: flex; align-items: center; gap: 10px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .logo-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 38px; height: 38px; background: rgba(255,255,255,0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px; display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 18px; font-weight: 900; font-family: 'Outfit', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid rgba(255,255,255,0.15);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .logo-text { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .logo-text span { font-weight: 400; font-size: 14px; opacity: 0.85; margin-left: 2px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .header-actions { display: flex; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .header-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 36px; height: 36px; background: rgba(255,255,255,0.15);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none; border-radius: 10px; color: white; font-size: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; transition: all 0.2s; position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.app-header .header-btn:active { transform: scale(0.92); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.notif-badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; top: -2px; right: -2px; width: 16px; height: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--accent-gold); border-radius: 50%; font-size: 9px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 700; display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: #000; border: 2px solid var(--primary);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* TV Section */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-section { position: relative; background: #000; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-player { width: 100%; aspect-ratio: 16/9; background: #000; position: relative; overflow: hidden; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-player video { width: 100%; height: 100%; object-fit: contain; display: block; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-player video::-webkit-media-controls { display: none !important; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.play-overlay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; inset: 0; display: flex; flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center; justify-content: center; background: rgba(0,0,0,0.5);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 5; cursor: pointer; transition: opacity 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.play-overlay.hidden { opacity: 0; pointer-events: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.play-overlay .big-play-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 72px; height: 72px; background: rgba(211,47,47,0.95);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 50%; display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 28px; color: white; box-shadow: 0 0 40px rgba(211,47,47,0.5);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 3px solid rgba(255,255,255,0.2); animation: pulsePlay 2s ease-in-out infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes pulsePlay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>0%, 100% { box-shadow: 0 0 40px rgba(211,47,47,0.5); transform: scale(1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>50% { box-shadow: 0 0 60px rgba(211,47,47,0.7); transform: scale(1.05); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.play-overlay .tap-text { margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.7); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.loading-spinner {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; inset: 0; display: flex; flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center; justify-content: center; z-index: 6;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(0,0,0,0.6); opacity: 0; pointer-events: none; transition: opacity 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.loading-spinner.show { opacity: 1; pointer-events: auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.spinner {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 48px; height: 48px; border: 4px solid rgba(255,255,255,0.15);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-top-color: var(--primary-light); border-radius: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>animation: spin 0.8s linear infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes spin { to { transform: rotate(360deg); } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.loading-spinner .load-text { margin-top: 12px; font-size: 13px; color: rgba(255,255,255,0.8); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.error-overlay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; inset: 0; display: flex; flex-direction: column;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center; justify-content: center; z-index: 7;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(0,0,0,0.85); opacity: 0; pointer-events: none; transition: opacity 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.error-overlay.show { opacity: 1; pointer-events: auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.error-overlay .error-icon {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 64px; height: 64px; border-radius: 50%; background: rgba(211,47,47,0.2);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 28px; color: var(--primary-light); margin-bottom: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.error-overlay .error-title { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.error-overlay .error-msg {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 12px; color: var(--text-secondary); text-align: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0 40px; margin: 8px 0 18px; line-height: 1.5;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.retry-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 10px 28px; background: var(--primary); border: none; border-radius: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white; font-size: 14px; font-weight: 600; cursor: pointer;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Noto Sans', sans-serif; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.retry-btn:active { transform: scale(0.95); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.live-indicator {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; top: 12px; left: 12px; display: flex;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>align-items: center; gap: 6px; background: rgba(0,0,0,0.7);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(10px); padding: 5px 10px; border-radius: 6px; z-index: 8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.live-dot { width: 8px; height: 8px; background: var(--live-red); border-radius: 50%; animation: blink 1s ease-in-out infinite; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.live-indicator .live-text { font-size: 11px; font-weight: 700; color: var(--live-red); letter-spacing: 1.5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.stream-quality {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.7);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(10px); padding: 4px 10px; border-radius: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 11px; color: rgba(255,255,255,0.8); z-index: 8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; gap: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.quality-dot { width: 6px; height: 6px; background: var(--green); border-radius: 50%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-logo-watermark {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; bottom: 50px; right: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Outfit', sans-serif; font-weight: 900; font-size: 24px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: rgba(255,255,255,0.08); letter-spacing: 2px; z-index: 3; pointer-events: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* TV Controls */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-controls {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-surface); padding: 12px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-bottom: 1px solid var(--border);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-info { display: flex; flex-direction: column; gap: 2px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-info .channel-name { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-info .program-name { font-size: 12px; color: var(--text-secondary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.stream-status { font-size: 10px; margin-top: 2px; display: flex; align-items: center; gap: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.stream-status.online { color: var(--green); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.stream-status.offline { color: var(--live-red); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.stream-status.connecting { color: var(--accent-gold); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-actions { display: flex; gap: 12px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-actions button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: none; border: none; color: var(--text-secondary);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 18px; cursor: pointer; padding: 6px; transition: color 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.tv-actions button:active { color: var(--primary-light); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.volume-control {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; bottom: 60px; right: 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(0,0,0,0.7); backdrop-filter: blur(10px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 10px; padding: 10px 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; gap: 8px; z-index: 10;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>opacity: 0; pointer-events: none; transition: all 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.volume-control.show { opacity: 1; pointer-events: auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.volume-control i { color: white; font-size: 14px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.volume-control input[type="range"] { width: 100px; accent-color: var(--primary); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Channel Strip */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.channel-strip {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; gap: 10px; padding: 12px 16px; overflow-x: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-surface); border-bottom: 1px solid var(--border); scrollbar-width: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.channel-strip::-webkit-scrollbar { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.channel-chip {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0; padding: 6px 14px; border-radius: 20px; font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 600; border: 1px solid var(--border); background: var(--bg-card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-secondary); cursor: pointer; transition: all 0.25s; white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.channel-chip.active { background: var(--primary); border-color: var(--primary); color: white; box-shadow: 0 2px 12px rgba(211,47,47,0.3); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.channel-chip:active { transform: scale(0.95); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Breaking News */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.breaking-news {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: linear-gradient(90deg, var(--primary-dark), var(--primary), var(--primary-dark));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 8px 0; overflow: hidden; position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.breaking-label {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: absolute; left: 0; top: 0; bottom: 0; background: var(--live-red);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0 12px; display: flex; align-items: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 10px; font-weight: 800; letter-spacing: 1.5px; color: white; z-index: 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.breaking-ticker {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; animation: tickerScroll 40s linear infinite;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>white-space: nowrap; padding-left: 90px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.breaking-ticker span { font-size: 12px; font-weight: 500; color: white; padding-right: 60px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes tickerScroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Section Header */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-header {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: space-between; padding: 16px 16px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-header .title-area { display: flex; align-items: center; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-header .title-bar { width: 4px; height: 20px; background: var(--primary); border-radius: 2px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-header h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 17px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.section-header .see-all {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 12px; color: var(--primary-light); font-weight: 600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; display: flex; align-items: center; gap: 4px; background: none; border: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Update info bar */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.update-bar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: space-between;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 0 16px 8px; font-size: 10px; color: var(--text-muted);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.update-bar .source-badge {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; gap: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 3px 8px; background: rgba(211,47,47,0.1); border-radius: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--primary-light); font-weight: 600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.update-bar .refresh-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: none; border: 1px solid var(--border); border-radius: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-secondary); font-size: 10px; padding: 3px 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; display: flex; align-items: center; gap: 4px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Noto Sans', sans-serif; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.update-bar .refresh-btn:active { border-color: var(--primary); color: var(--primary-light); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.update-bar .refresh-btn.spinning i { animation: spin 0.8s linear infinite; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Category Tabs */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.category-tabs {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; gap: 0; padding: 0 16px 10px; overflow-x: auto; scrollbar-width: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.category-tabs::-webkit-scrollbar { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.cat-tab {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0; padding: 7px 14px; font-size: 12px; font-weight: 500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-secondary); border: none; background: none;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; position: relative; transition: color 0.25s; white-space: nowrap;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Noto Sans', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.cat-tab.active { color: var(--text-primary); font-weight: 700; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.cat-tab.active::after {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content: ''; position: absolute; bottom: 0; left: 14px; right: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>height: 3px; background: var(--primary); border-radius: 3px 3px 0 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Shimmer loading */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.shimmer { background: linear-gradient(90deg, var(--bg-card) 25%, var(--bg-card-hover) 50%, var(--bg-card) 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; border-radius: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@keyframes shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-featured { height: 280px; margin: 0 16px 16px; border-radius: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-h-card { width: 200px; height: 170px; border-radius: 12px; flex-shrink: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news { display: flex; gap: 12px; padding: 14px 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news .sk-thumb { width: 110px; height: 80px; border-radius: 10px; flex-shrink: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news .sk-lines { flex: 1; display: flex; flex-direction: column; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news .sk-line { height: 12px; border-radius: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news .sk-line.w70 { width: 70%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news .sk-line.w90 { width: 90%; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.skeleton-news .sk-line.w50 { width: 50%; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Featured Card */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 16px 14px; border-radius: 16px; overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-card); border: 1px solid var(--border);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; transition: all 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card:active { transform: scale(0.98); border-color: var(--primary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card .card-image { width: 100%; aspect-ratio: 16/10; position: relative; overflow: hidden; background: var(--bg-card-hover); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card .card-image img { width: 100%; height: 100%; object-fit: cover; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card .card-image .badge-overlay { position: absolute; top: 10px; left: 10px; display: flex; gap: 6px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.badge { padding: 3px 8px; border-radius: 6px; font-size: 10px; font-weight: 700; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.badge-headline { background: var(--primary); color: white; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.badge-source {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(0,0,0,0.7); color: white;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; gap: 3px; font-weight: 500;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card .card-body { padding: 12px 14px 14px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.featured-card .card-body h3 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 15px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.4; margin-bottom: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-meta { display: flex; align-items: center; gap: 12px; font-size: 11px; color: var(--text-muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-meta .meta-item { display: flex; align-items: center; gap: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.card-meta .meta-item i { font-size: 10px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* H News */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-scroll { display: flex; gap: 12px; padding: 0 16px 14px; overflow-x: auto; scrollbar-width: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-scroll::-webkit-scrollbar { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0; width: 195px; background: var(--bg-card); border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow: hidden; border: 1px solid var(--border); cursor: pointer; transition: all 0.25s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card:active { transform: scale(0.97); border-color: var(--primary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card .h-card-img { width: 100%; height: 110px; object-fit: cover; background: var(--bg-card-hover); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card .h-card-body { padding: 10px 11px 12px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card .h-card-body .h-cat { font-size: 9px; font-weight: 700; color: var(--primary-light); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card .h-card-body h4 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>-webkit-box-orient: vertical; overflow: hidden; margin-bottom: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.h-news-card .h-card-body .h-card-time { font-size: 10px; color: var(--text-muted); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* News List */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-list { padding: 0 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; gap: 12px; padding: 13px 0; border-bottom: 1px solid var(--border);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item:last-child { border-bottom: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item:active { opacity: 0.7; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-thumb {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 105px; height: 78px; border-radius: 10px; overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>flex-shrink: 0; position: relative; background: var(--bg-card-hover);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-thumb img { width: 100%; height: 100%; object-fit: cover; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-content { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-content .news-category {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 9px; font-weight: 700; color: var(--primary-light);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase; letter-spacing: 0.5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-content h4 {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-family: 'Outfit', sans-serif; font-weight: 600; font-size: 13px; line-height: 1.35;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-content .news-time { font-size: 10px; color: var(--text-muted); display: flex; align-items: center; gap: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-content .news-src { font-size: 9px; color: var(--text-muted); display: flex; align-items: center; gap: 3px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-item .news-content .news-src i { font-size: 8px; color: var(--primary-light); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Load more */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.load-more-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: block; margin: 12px auto 20px; padding: 10px 32px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-secondary); font-size: 13px; font-weight: 600;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; font-family: 'Noto Sans', sans-serif; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.load-more-btn:active { border-color: var(--primary); color: var(--primary-light); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Bottom Nav */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.bottom-nav {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%; max-width: 480px; background: rgba(18,18,18,0.95);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>backdrop-filter: blur(20px); display: flex; justify-content: space-around;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 6px 0 10px; border-top: 1px solid var(--border); z-index: 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; flex-direction: column; align-items: center; gap: 3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 6px 12px; border: none; background: none; color: var(--text-muted);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>cursor: pointer; transition: all 0.25s; position: relative;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item i { font-size: 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item span { font-size: 10px; font-weight: 600; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item.active { color: var(--primary-light); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item.active i { transform: scale(1.1); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.nav-item.active::before {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 24px; height: 3px; background: var(--primary); border-radius: 0 0 3px 3px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Page sections */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.page-section { display: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.page-section.active { display: block; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.beranda-page { display: block; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Toast */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.toast {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed; bottom: 90px; left: 50%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transform: translateX(-50%) translateY(100px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: rgba(40,40,40,0.95); backdrop-filter: blur(15px);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: white; padding: 10px 20px; border-radius: 12px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 13px; font-weight: 500; z-index: 200;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid var(--border); display: flex; align-items: center; gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.toast.show { transform: translateX(-50%) translateY(0); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* News Modal */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-overlay {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed; inset: 0; background: rgba(0,0,0,0.8);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 150; opacity: 0; pointer-events: none; transition: opacity 0.3s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-overlay.show { opacity: 1; pointer-events: auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-modal {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>position: fixed; bottom: 0; left: 50%; transform: translateX(-50%) translateY(100%);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%; max-width: 480px; max-height: 85vh;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-card); border-radius: 20px 20px 0 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>z-index: 151; transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>overflow-y: auto;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.news-modal.show { transform: translateX(-50%) translateY(0); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-handle { width: 40px; height: 4px; background: var(--text-muted); border-radius: 4px; margin: 12px auto; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-image { width: 100%; aspect-ratio: 16/9; object-fit: cover; background: var(--bg-card-hover); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content { padding: 16px 20px 30px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content .modal-cat {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 11px; font-weight: 700; color: var(--primary-light);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content h2 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 20px; line-height: 1.35; margin-bottom: 12px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content .modal-meta {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; gap: 16px; font-size: 12px; color: var(--text-muted);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content .modal-meta .mm-item { display: flex; align-items: center; gap: 5px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content .modal-body { font-size: 14px; line-height: 1.75; color: var(--text-secondary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content .modal-body p { margin-bottom: 12px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-content .modal-body img { max-width: 100%; border-radius: 8px; margin: 12px 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-open-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center; gap: 8px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin-top: 16px; padding: 12px; background: var(--primary);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: none; border-radius: 12px; color: white; font-size: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-weight: 600; cursor: pointer; font-family: 'Noto Sans', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>text-decoration: none; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.modal-open-btn:active { transform: scale(0.97); background: var(--primary-dark); }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Jadwal */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-list { padding: 0 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-item { display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--border); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-item:last-child { border-bottom: none; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-time { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 14px; color: var(--primary-light); width: 55px; flex-shrink: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-divider { width: 3px; height: 36px; border-radius: 3px; background: var(--border); flex-shrink: 0; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-item.now .schedule-divider { background: var(--primary); box-shadow: 0 0 8px rgba(211,47,47,0.4); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-info { flex: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-info h4 { font-weight: 600; font-size: 14px; margin-bottom: 2px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-item.now .schedule-info h4 { color: var(--primary-light); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-info p { font-size: 12px; color: var(--text-muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.schedule-now-badge { font-size: 9px; font-weight: 700; background: var(--primary); color: white; padding: 3px 8px; border-radius: 10px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Pencarian &amp; Profil */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.search-box { margin: 16px; position: relative; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.search-box input {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 100%; padding: 12px 16px 12px 44px; border-radius: 14px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid var(--border); background: var(--bg-card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>color: var(--text-primary); font-size: 14px; font-family: 'Noto Sans', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>outline: none; transition: border-color 0.25s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.search-box input:focus { border-color: var(--primary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.search-box input::placeholder { color: var(--text-muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.search-box i { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 15px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.trending-tags { padding: 0 16px; display: flex; flex-wrap: wrap; gap: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.trending-tag {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>padding: 6px 14px; border-radius: 20px; background: var(--bg-card);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border: 1px solid var(--border); color: var(--text-secondary);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 12px; font-weight: 500; cursor: pointer; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.trending-tag:active { background: var(--primary); border-color: var(--primary); color: white; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-header { text-align: center; padding: 30px 16px 20px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-avatar {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 80px; height: 80px; border-radius: 50%; background: var(--gradient-red);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 32px; font-weight: 900; font-family: 'Outfit', sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>margin: 0 auto 12px; border: 3px solid rgba(211,47,47,0.3);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-header h3 { font-family: 'Outfit', sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 4px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-header p { font-size: 13px; color: var(--text-muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu { padding: 0 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>display: flex; align-items: center; gap: 14px; padding: 14px 16px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>background: var(--bg-card); border: 1px solid var(--border);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>border-radius: 12px; margin-bottom: 8px; cursor: pointer; transition: all 0.2s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item:active { transform: scale(0.98); border-color: var(--primary); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item .pmi-icon { width: 40px; height: 40px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 16px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item .pmi-text { flex: 1; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item .pmi-text h4 { font-size: 14px; font-weight: 600; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item .pmi-text p { font-size: 11px; color: var(--text-muted); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.profile-menu-item .pmi-arrow { color: var(--text-muted); font-size: 14px; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/* Fullscreen */</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fullscreen-video { position: fixed; inset: 0; background: #000; z-index: 200; display: none; flex-direction: column; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fullscreen-video.show { display: flex; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-video-header { display: flex; align-items: center; justify-content: space-between; padding: 12px 16px; background: rgba(0,0,0,0.8); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-video-header button { background: none; border: none; color: white; font-size: 20px; cursor: pointer; padding: 6px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-video-header .fs-title { font-weight: 600; font-size: 14px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-video-body { flex: 1; position: relative; background: #000; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-video-body video { width: 100%; height: 100%; object-fit: contain; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-controls { display: flex; align-items: center; justify-content: center; gap: 30px; padding: 16px; background: rgba(0,0,0,0.8); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-controls button { background: none; border: none; color: white; font-size: 22px; cursor: pointer; padding: 8px; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>.fs-controls .fs-play-btn {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>width: 52px; height: 52px; border-radius: 50%; background: var(--primary);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>font-size: 20px; display: flex; align-items: center; justify-content: center;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>@media (prefers-reduced-motion: reduce) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>*, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="status-bar"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="time" id="statusTime"&gt;09:41&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="icons"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;i class="fas fa-signal" style="font-size:10px"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;i class="fas fa-wifi" style="font-size:11px"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;i class="fas fa-battery-three-quarters" style="font-size:12px"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;header class="app-header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="logo-area"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="logo-icon"&gt;B&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="logo-text"&gt;Banjar&lt;span&gt;TV&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="header-actions"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="header-btn" aria-label="Pencarian" onclick="switchTab('pencarian')"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="header-btn" aria-label="Notifikasi" onclick="showToast('Tidak ada notifikasi baru')"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-bell"&gt;&lt;/i&gt;&lt;div class="notif-badge"&gt;3&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;main class="main-content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- BERANDA --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="page-section active" id="page-beranda"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- TV Player --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="tv-section"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="tv-player" id="tvPlayer"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;video id="videoPlayer" playsinline&gt;&lt;/video&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="play-overlay" id="playOverlay" onclick="startStream()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="big-play-btn"&gt;&lt;i class="fas fa-play" style="margin-left:3px"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="tap-text"&gt;Ketuk untuk menonton Live&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="loading-spinner" id="loadingSpinner"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="spinner"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="load-text"&gt;Menghubungkan ke BanjarTV...&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="error-overlay" id="errorOverlay"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="error-icon"&gt;&lt;i class="fas fa-satellite-dish"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="error-title"&gt;Stream Tidak Tersedia&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="error-msg" id="errorMsg"&gt;Gagal terhubung ke server streaming.&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button class="retry-btn" onclick="retryStream()"&gt;&lt;i class="fas fa-redo" style="margin-right:6px"&gt;&lt;/i&gt;Coba Lagi&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="live-indicator" id="liveIndicator" style="display:none;"&gt;&lt;div class="live-dot"&gt;&lt;/div&gt;&lt;span class="live-text"&gt;LIVE&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="stream-quality" id="qualityBadge" style="display:none;"&gt;&lt;div class="quality-dot"&gt;&lt;/div&gt;&lt;span id="qualityText"&gt;HD&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="tv-logo-watermark"&gt;BANJARTV&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="tv-controls"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="tv-info"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="channel-name"&gt;BanjarTV&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="program-name"&gt;Siaran Langsung&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="stream-status connecting" id="streamStatus"&gt;&lt;i class="fas fa-circle" style="font-size:6px"&gt;&lt;/i&gt;&lt;span id="streamStatusText"&gt;Menunggu...&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="tv-actions"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button aria-label="Volume" onclick="toggleVolume()"&gt;&lt;i class="fas fa-volume-up"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button aria-label="Bagikan" onclick="showToast('Link live disalin')"&gt;&lt;i class="fas fa-share-alt"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;button aria-label="Layar penuh" onclick="goFullscreen()"&gt;&lt;i class="fas fa-expand"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="volume-control" id="volumeControl"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-volume-up" id="volumeIcon"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;input type="range" min="0" max="100" value="80" id="volumeSlider" oninput="changeVolume(this.value)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="channel-strip"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="channel-chip active"&gt;BanjarTV Live&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="channel-chip" onclick="showToast('Channel lain segera hadir')"&gt;News&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="channel-chip" onclick="showToast('Channel lain segera hadir')"&gt;Sport&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="channel-chip" onclick="showToast('Channel lain segera hadir')"&gt;Budaya&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="channel-chip" onclick="showToast('Channel lain segera hadir')"&gt;Edukasi&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Breaking News - diisi real-time --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="breaking-news" id="breakingNews" style="display:none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="breaking-label"&gt;BREAKING&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="breaking-ticker" id="breakingTicker"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Berita Terkini --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="title-area"&gt;&lt;div class="title-bar"&gt;&lt;/div&gt;&lt;h2&gt;Berita Terkini&lt;/h2&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Info update --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="update-bar" id="updateBar" style="display:none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="source-badge"&gt;&lt;i class="fas fa-rss"&gt;&lt;/i&gt; Sumber: banjartv.com&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="refresh-btn" id="refreshBtn" onclick="refreshNews()"&gt;&lt;i class="fas fa-sync-alt"&gt;&lt;/i&gt; Refresh&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="category-tabs" id="categoryTabs"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="cat-tab active" data-cat="all" onclick="filterNews(this)"&gt;Semua&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Skeleton loading --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div id="newsSkeleton"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="shimmer skeleton-featured"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div style="display:flex;gap:12px;padding:0 16px 14px;overflow:hidden;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="shimmer skeleton-h-card"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="shimmer skeleton-h-card"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="shimmer skeleton-h-card"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skeleton-news"&gt;&lt;div class="shimmer sk-thumb"&gt;&lt;/div&gt;&lt;div class="sk-lines"&gt;&lt;div class="shimmer sk-line w70"&gt;&lt;/div&gt;&lt;div class="shimmer sk-line w90"&gt;&lt;/div&gt;&lt;div class="shimmer sk-line w50"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skeleton-news"&gt;&lt;div class="shimmer sk-thumb"&gt;&lt;/div&gt;&lt;div class="sk-lines"&gt;&lt;div class="shimmer sk-line w70"&gt;&lt;/div&gt;&lt;div class="shimmer sk-line w90"&gt;&lt;/div&gt;&lt;div class="shimmer sk-line w50"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="skeleton-news"&gt;&lt;div class="shimmer sk-thumb"&gt;&lt;/div&gt;&lt;div class="sk-lines"&gt;&lt;div class="shimmer sk-line w70"&gt;&lt;/div&gt;&lt;div class="shimmer sk-line w90"&gt;&lt;/div&gt;&lt;div class="shimmer sk-line w50"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;!-- Real news content (hidden until loaded) --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div id="newsContent" style="display:none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div id="featuredArea"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="section-header" id="hNewsHeader" style="display:none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="title-area"&gt;&lt;div class="title-bar"&gt;&lt;/div&gt;&lt;h2&gt;Berita Populer&lt;/h2&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="h-news-scroll" id="hNewsScroll"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="section-header" id="listHeader" style="display:none;"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="title-area"&gt;&lt;div class="title-bar"&gt;&lt;/div&gt;&lt;h2&gt;Berita Lainnya&lt;/h2&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="news-list" id="newsList"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;button class="load-more-btn" id="loadMoreBtn" style="display:none;" onclick="loadMoreNews()"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-chevron-down" style="margin-right:6px"&gt;&lt;/i&gt;Muat Lebih Banyak</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- JADWAL --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="page-section" id="page-jadwal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-header"&gt;&lt;div class="title-area"&gt;&lt;div class="title-bar"&gt;&lt;/div&gt;&lt;h2&gt;Jadwal Acara Hari Ini&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="schedule-list" id="scheduleList"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- PENCARIAN --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="page-section" id="page-pencarian"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="search-box"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;input type="text" placeholder="Cari berita, acara, topik..." id="searchInput" oninput="handleSearch(this.value)"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="section-header"&gt;&lt;div class="title-area"&gt;&lt;div class="title-bar"&gt;&lt;/div&gt;&lt;h2&gt;Trending&lt;/h2&gt;&lt;/div&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="trending-tags" id="trendingTags"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="news-list" id="searchResults" style="margin-top:16px;display:none;"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;!-- PROFIL --&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;section class="page-section" id="page-profil"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="profile-header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="profile-avatar"&gt;B&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;h3&gt;BanjarTV Official&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;p&gt;TV nya Urang Banjar&lt;/p&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="profile-menu"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="profile-menu-item" onclick="showToast('Tentang BanjarTV')"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-icon" style="background:rgba(211,47,47,0.15);color:var(--primary-light);"&gt;&lt;i class="fas fa-info-circle"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-text"&gt;&lt;h4&gt;Tentang Kami&lt;/h4&gt;&lt;p&gt;Profil dan sejarah BanjarTV&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-chevron-right pmi-arrow"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="profile-menu-item" onclick="window.open('https://www.banjartv.com','_blank')"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-icon" style="background:rgba(33,150,243,0.15);color:#42A5F5;"&gt;&lt;i class="fas fa-globe"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-text"&gt;&lt;h4&gt;Kunjungi Website&lt;/h4&gt;&lt;p&gt;www.banjartv.com&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-chevron-right pmi-arrow"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="profile-menu-item" onclick="showToast('Hubungi 082299836476')"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-icon" style="background:rgba(76,175,80,0.15);color:#66BB6A;"&gt;&lt;i class="fas fa-envelope"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-text"&gt;&lt;h4&gt;Kontak Redaksi&lt;/h4&gt;&lt;p&gt;Hubungi 082299836476&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-chevron-right pmi-arrow"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="profile-menu-item" onclick="showToast('Pengaturan')"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-icon" style="background:rgba(255,179,0,0.15);color:var(--accent-gold);"&gt;&lt;i class="fas fa-gear"&gt;&lt;/i&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="pmi-text"&gt;&lt;h4&gt;Pengaturan&lt;/h4&gt;&lt;p&gt;Kualitas video, notifikasi&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;i class="fas fa-chevron-right pmi-arrow"&gt;&lt;/i&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/main&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;nav class="bottom-nav"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="nav-item active" data-tab="beranda" onclick="switchTab('beranda')"&gt;&lt;i class="fas fa-house"&gt;&lt;/i&gt;&lt;span&gt;Beranda&lt;/span&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="nav-item" data-tab="jadwal" onclick="switchTab('jadwal')"&gt;&lt;i class="fas fa-calendar-days"&gt;&lt;/i&gt;&lt;span&gt;Jadwal&lt;/span&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="nav-item" data-tab="pencarian" onclick="switchTab('pencarian')"&gt;&lt;i class="fas fa-search"&gt;&lt;/i&gt;&lt;span&gt;Cari&lt;/span&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button class="nav-item" data-tab="profil" onclick="switchTab('profil')"&gt;&lt;i class="fas fa-user"&gt;&lt;/i&gt;&lt;span&gt;Profil&lt;/span&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="toast" id="toast"&gt;&lt;i class="fas fa-check-circle" style="color:var(--accent-gold)"&gt;&lt;/i&gt;&lt;span id="toastMsg"&gt;&lt;/span&gt;&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="modal-overlay" id="modalOverlay" onclick="closeNews()"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="news-modal" id="newsModal"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="modal-handle"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;img class="modal-image" id="modalImg" src="" alt=""&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="modal-cat" id="modalCat"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;h2 id="modalTitle"&gt;&lt;/h2&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="modal-meta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="mm-item"&gt;&lt;i class="far fa-clock"&gt;&lt;/i&gt; &lt;span id="modalTime"&gt;&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;span class="mm-item"&gt;&lt;i class="far fa-user"&gt;&lt;/i&gt; &lt;span id="modalAuthor"&gt;&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="modal-body" id="modalBody"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;a class="modal-open-btn" id="modalLink" href="#" target="_blank" rel="noopener"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;i class="fas fa-external-link-alt"&gt;&lt;/i&gt; Baca Selengkapnya di banjartv.com</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;/a&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div class="fullscreen-video" id="fullscreenVideo"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="fs-video-header"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="exitFullscreen()"&gt;&lt;i class="fas fa-arrow-left"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;span class="fs-title"&gt;BanjarTV Live&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="exitFullscreen()"&gt;&lt;i class="fas fa-compress"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="fs-video-body"&gt;&lt;video id="fsVideoPlayer" playsinline&gt;&lt;/video&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;div class="fs-controls"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="toggleFsMute()"&gt;&lt;i class="fas fa-volume-up" id="fsVolIcon"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button class="fs-play-btn" id="fsPlayBtn" onclick="toggleFsPlay()"&gt;&lt;i class="fas fa-pause"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;button onclick="exitFullscreen()"&gt;&lt;i class="fas fa-compress"&gt;&lt;/i&gt;&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;script&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// KONFIGURASI</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const STREAM_URL = 'https://banjartv.siar.us/banjartv/live/playlist.m3u8';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const WP_API = 'https://www.banjartv.com/wp-json/wp/v2';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const PROXIES = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'', // Langsung</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'https://api.allorigins.win/raw?url=',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>'https://corsproxy.io/?'</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// STATE</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let allPosts = []; <span class="Apple-converted-space">          </span>// Semua post dari API</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let displayPosts = []; <span class="Apple-converted-space">      </span>// Post yang ditampilkan (setelah filter)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let shownCount = 0;<span class="Apple-converted-space">          </span>// Jumlah post yang sudah ditampilkan</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let activeCategory = 'all';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let isRealData = false;<span class="Apple-converted-space">      </span>// Apakah data dari API atau fallback</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let lastUpdateTime = null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let hls = null, fsHls = null, isPlaying = false, isFsPlaying = false;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// DATA FALLBACK (jika API gagal)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const fallbackData = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 0, cat: 'Info Banjar', title: 'Haul ke-123 Syekh H. Muhammad Thaher, Wabup HSS Ajak Masyarakat Teladani Perjuangan Ulama', date: '30/03/2026', img: 'https://picsum.photos/seed/btv-haul/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Wakil Bupati HSS menghadiri haul ke-123 Syekh H. Muhammad Thaher dan mengajak masyarakat untuk meneladani perjuangan ulama.', content: '&lt;p&gt;Wakil Bupati Hulu Sungai Selatan (HSS) menghadiri haul ke-123 Syekh H. Muhammad Thaher dan mengajak masyarakat untuk meneladani perjuangan ulama dalam membangun daerah.&lt;/p&gt;&lt;p&gt;Dalam sambutannya, Wabup menekankan pentingnya nilai-nilai keulamaan sebagai landasan dalam kehidupan bermasyarakat.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 1, cat: 'Berita Daerah', title: 'Progres Koperasi Merah Putih Capai 25 Titik, HSS Kejar Target Nasional', date: '30/03/2026', img: 'https://picsum.photos/seed/btv-koperasi/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Koperasi Merah Putih di Kabupaten HSS terus menunjukkan progres signifikan.', content: '&lt;p&gt;Koperasi Merah Putih di Kabupaten HSS terus menunjukkan progres signifikan dengan telah mencapai 25 titik layanan.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 2, cat: 'Berita Daerah', title: 'Sinergi Pemda dan TNI, Panen Raya di Padang Batung Perkuat Ketahanan Pangan HSS', date: '27/03/2026', img: 'https://picsum.photos/seed/btv-panen/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Pemerintah Daerah HSS bersama TNI melaksanakan panen raya di Padang Batung.', content: '&lt;p&gt;Pemerintah Daerah HSS bersama TNI melaksanakan panen raya sebagai wujud sinergi memperkuat ketahanan pangan.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 3, cat: 'Berita Daerah', title: 'Musrenbang RKPD 2027 Resmi Dibuka, Wabup HSS Tekankan Pembangunan Berbasis Data', date: '27/03/2026', img: 'https://picsum.photos/seed/btv-musrenbang/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Musrenbang RKPD 2027 Kabupaten HSS resmi dibuka oleh Wakil Bupati.', content: '&lt;p&gt;Musyawarah Perencanaan Pembangunan RKPD 2027 Kabupaten HSS resmi dibuka.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 4, cat: 'Info Banjar', title: 'Buka Puasa Bersama BANJAR TV Dihadiri Mantan Menteri dan Tokoh Daerah', date: '01/03/2026', img: 'https://picsum.photos/seed/btv-bukapuasa/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Suasana hangat dalam kegiatan buka puasa bersama yang digelar Banjar TV.', content: '&lt;p&gt;Suasana hangat dan penuh keakraban terasa dalam kegiatan buka puasa bersama Banjar TV.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 5, cat: 'Budaya', title: '58 Peserta Ramaikan Lomba Tanglong, Festival Ramadan HSS Kian Semarak', date: '19/03/2026', img: 'https://picsum.photos/seed/btv-tanglong/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Festival Ramadan HSS semarak dengan lomba tanglong.', content: '&lt;p&gt;Lomba tanglong diikuti 58 peserta dari berbagai kalangan di Festival Ramadan HSS.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 6, cat: 'Olahraga', title: 'Bupati HSS Serahkan Bonus Atlet Porprov dan Peparprov, Total Rp4,6 Miliar', date: '21/03/2026', img: 'https://picsum.photos/seed/btv-atlet/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Bonus atlet berprestasi mencapai Rp4,6 miliar.', content: '&lt;p&gt;Bupati HSS menyerahkan bonus kepada atlet berprestasi pada Porprov dan Peparprov.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 7, cat: 'Kesehatan', title: 'Wujudkan Kabupaten Layak Anak, Bupati HSS Luncurkan Program BSAN dan Desa ODF', date: '12/03/2026', img: 'https://picsum.photos/seed/btv-bsan/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Program Kabupaten Layak Anak diluncurkan melalui BSAN dan Desa ODF.', content: '&lt;p&gt;Bupati HSS meluncurkan program Kabupaten Layak Anak.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 8, cat: 'Budaya', title: 'Rasyid Asal Kabupaten Banjar Raih Juara Lomba Madihin Kreatif se-Kalsel', date: '19/03/2026', img: 'https://picsum.photos/seed/btv-madihin/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Pemuda asal Kabupaten Banjar raih juara Madihin Kreatif.', content: '&lt;p&gt;Rasyid berhasil meraih juara dalam Lomba Madihin Kreatif tingkat Kalimantan Selatan.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ id: 9, cat: 'Berita Daerah', title: 'Sekda HSS Tinjau MPP, Tekankan Pelayanan Cepat dan Nyaman bagi Masyarakat', date: '27/03/2026', img: 'https://picsum.photos/seed/btv-mpp/800/500.jpg', author: 'banjartv', link: 'https://www.banjartv.com', excerpt: 'Sekda HSS meninjau Mal Pelayanan Publik.', content: '&lt;p&gt;Sekretaris Daerah HSS melakukan peninjauan ke MPP.&lt;/p&gt;' },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// FETCH BERITA DARI BANJARTV.COM</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/**</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>* Fetch dengan fallback chain:</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>* 1. Langsung ke WP REST API</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>* 2. Via CORS proxy #1</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>* 3. Via CORS proxy #2</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>* 4. Fallback ke data statis</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function fetchFromAPI(endpoint) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>for (const proxy of PROXIES) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const url = proxy ? proxy + encodeURIComponent(endpoint) : endpoint;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const controller = new AbortController();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const timeout = setTimeout(() =&gt; controller.abort(), 8000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const res = await fetch(url, {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>signal: controller.signal,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>headers: { 'Accept': 'application/json' }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>clearTimeout(timeout);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (res.ok) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>const data = await res.json();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>if (Array.isArray(data) &amp;&amp; data.length &gt; 0) return { data, proxy: proxy ? 'proxy' : 'direct' };</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>} catch (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>// Lanjut ke proxy berikutnya</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function normalizeImageUrl(url) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!url) return 'https://picsum.photos/seed/banjartv-placeholder/800/500.jpg';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (url.startsWith('//')) return 'https:' + url;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (url.startsWith('/')) return 'https://www.banjartv.com' + url;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return url;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function stripHtml(html) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!html) return '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const tmp = document.createElement('div');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>tmp.innerHTML = html;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return tmp.textContent || tmp.innerText || '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function formatDate(dateStr) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const d = new Date(dateStr);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return d.toLocaleDateString('id-ID', { day: 'numeric', month: 'short', year: 'numeric' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return dateStr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function timeAgo(dateStr) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>try {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const now = new Date();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const d = new Date(dateStr);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const diffMs = now - d;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const diffMin = Math.floor(diffMs / 60000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const diffHr = Math.floor(diffMs / 3600000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const diffDay = Math.floor(diffMs / 86400000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (diffMin &lt; 1) return 'Baru saja';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (diffMin &lt; 60) return diffMin + ' menit lalu';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (diffHr &lt; 24) return diffHr + ' jam lalu';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (diffDay &lt; 7) return diffDay + ' hari lalu';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return formatDate(dateStr);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} catch (e) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>return dateStr;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>/**</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>* Parse data dari WordPress REST API ke format internal</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">         </span>*/</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function parseWpPost(post) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const embedded = post._embedded || {};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const media = embedded['wp:featuredmedia'] || [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const terms = embedded['wp:term'] || [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const categories = terms[0] || [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const author = embedded.author || [{}];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const imageUrl = media[0] ? normalizeImageUrl(media[0].source_url || media[0].media_details?.sizes?.medium?.source_url) : null;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const catName = categories.length &gt; 0 ? categories[0].name : 'Umum';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const catSlug = categories.length &gt; 0 ? categories[0].slug : 'umum';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>return {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>id: post.id,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>title: stripHtml(post.title.rendered),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>excerpt: stripHtml(post.excerpt.rendered),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>content: post.content.rendered,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>date: post.date,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>dateFormatted: formatDate(post.date),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>timeAgo: timeAgo(post.date),</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>image: imageUrl,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>category: catName,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>categorySlug: catSlug,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>author: author[0].name || 'Redaksi',</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>link: post.link</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function loadNews() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const skeleton = document.getElementById('newsSkeleton');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const content = document.getElementById('newsContent');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const updateBar = document.getElementById('updateBar');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const breakingNews = document.getElementById('breakingNews');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>skeleton.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content.style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateBar.style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>breakingNews.style.display = 'none';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Coba ambil dari API</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const result = await fetchFromAPI(WP_API + '/posts?per_page=30&amp;_embed');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (result &amp;&amp; result.data) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// BERHASIL - data real dari banjartv.com</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>allPosts = result.data.map(parseWpPost);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isRealData = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>lastUpdateTime = new Date();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.log('Berhasil mengambil ' + allPosts.length + ' berita dari banjartv.com (' + result.proxy + ')');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Breaking news ticker</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const tickerTitles = allPosts.slice(0, 6).map(p =&gt; p.title);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>renderBreakingTicker(tickerTitles);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>breakingNews.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// GAGAL - pakai fallback data</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>console.log('Gagal fetch API, menggunakan data fallback');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>allPosts = fallbackData.map(d =&gt; ({</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>...d, dateFormatted: d.date, timeAgo: d.date,</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>categorySlug: d.cat.toLowerCase().replace(/\s+/g, '-')</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>isRealData = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>lastUpdateTime = null;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Breaking news dari fallback</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const tickerTitles = allPosts.slice(0, 5).map(p =&gt; p.title);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>renderBreakingTicker(tickerTitles);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>breakingNews.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Extract unique categories untuk tab filter</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>buildCategoryTabs();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Render berita</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>activeCategory = 'all';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>shownCount = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.cat-tab').forEach(t =&gt; t.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelector('.cat-tab[data-cat="all"]').classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderNews();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Tampilkan konten</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>skeleton.style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>content.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateBar.style.display = 'flex';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Update info waktu</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (lastUpdateTime) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const timeStr = lastUpdateTime.toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showToast('Berita diperbarui pukul ' + timeStr);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showToast('Mode offline - data tersimpan');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function buildCategoryTabs() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const catMap = {};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>allPosts.forEach(p =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>if (!catMap[p.category]) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>catMap[p.category] = p.categorySlug;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const container = document.getElementById('categoryTabs');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>let html = '&lt;button class="cat-tab active" data-cat="all" onclick="filterNews(this)"&gt;Semua&lt;/button&gt;';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Urutkan berdasarkan frekuensi kemunculan</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const catCounts = {};</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>allPosts.forEach(p =&gt; { catCounts[p.category] = (catCounts[p.category] || 0) + 1; });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const sortedCats = Object.entries(catCounts).sort((a, b) =&gt; b[1] - a[1]);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>sortedCats.forEach(([name, count]) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const slug = catMap[name];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>html += `&lt;button class="cat-tab" data-cat="${slug}" onclick="filterNews(this)"&gt;${name}&lt;/button&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>container.innerHTML = html;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function filterNews(el) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.cat-tab').forEach(t =&gt; t.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>el.classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>activeCategory = el.dataset.cat;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>shownCount = 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderNews();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderNews() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Filter berdasarkan kategori</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (activeCategory === 'all') {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>displayPosts = [...allPosts];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>displayPosts = allPosts.filter(p =&gt; p.categorySlug === activeCategory);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Featured card (post pertama)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const featured = document.getElementById('featuredArea');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (displayPosts.length &gt; 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>const p = displayPosts[0];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>featured.innerHTML = `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="featured-card" onclick="openNews(0)"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="card-image"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;img src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.src='https://picsum.photos/seed/banjartv-err/800/500.jpg'"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="badge-overlay"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span class="badge badge-headline"&gt;TERKINI&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>${isRealData ? '&lt;span class="badge badge-source"&gt;&lt;i class="fas fa-rss" style="font-size:8px"&gt;&lt;/i&gt; banjartv.com&lt;/span&gt;' : ''}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="card-body"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h3&gt;${p.title}&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="card-meta"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span class="meta-item"&gt;&lt;i class="far fa-clock"&gt;&lt;/i&gt; ${p.timeAgo}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span class="meta-item"&gt;&lt;i class="far fa-user"&gt;&lt;/i&gt; ${p.author}&lt;/span&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>featured.innerHTML = '&lt;div style="text-align:center;padding:30px;color:var(--text-muted);font-size:14px;"&gt;Tidak ada berita untuk kategori ini&lt;/div&gt;';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Horizontal scroll (post 1-5)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const hScroll = document.getElementById('hNewsScroll');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const hHeader = document.getElementById('hNewsHeader');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const hPosts = displayPosts.slice(1, 6);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (hPosts.length &gt; 0) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hHeader.style.display = 'flex';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hScroll.innerHTML = hPosts.map((p, i) =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="h-news-card" onclick="openNews(${i + 1})"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;img class="h-card-img" src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.src='https://picsum.photos/seed/btv-err${i}/400/300.jpg'"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="h-card-body"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="h-cat"&gt;${p.category}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4&gt;${p.title}&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="h-card-time"&gt;&lt;i class="far fa-clock" style="margin-right:4px;font-size:9px"&gt;&lt;/i&gt;${p.timeAgo}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;`).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hHeader.style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hScroll.innerHTML = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// List (post 6+)</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>shownCount = Math.min(6, displayPosts.length);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderNewsList();</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Load more button</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const loadMoreBtn = document.getElementById('loadMoreBtn');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>loadMoreBtn.style.display = shownCount &lt; displayPosts.length ? 'block' : 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderNewsList() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const container = document.getElementById('newsList');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const listHeader = document.getElementById('listHeader');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const listPosts = displayPosts.slice(6, shownCount);</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (shownCount &gt; 6) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>listHeader.style.display = 'flex';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>listHeader.style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>container.innerHTML = listPosts.map((p, i) =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="news-item" onclick="openNews(${i + 6})"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="news-thumb"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;img src="${p.image}" alt="${p.title}" loading="lazy" onerror="this.src='https://picsum.photos/seed/btv-list${i}/300/200.jpg'"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="news-content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="news-category"&gt;${p.category}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h4&gt;${p.title}&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="news-time"&gt;&lt;i class="far fa-clock"&gt;&lt;/i&gt; ${p.timeAgo}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>${isRealData ? '&lt;div class="news-src"&gt;&lt;i class="fas fa-circle"&gt;&lt;/i&gt; banjartv.com&lt;/div&gt;' : ''}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;`).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function loadMoreNews() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>shownCount = Math.min(shownCount + 5, displayPosts.length);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderNewsList();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('loadMoreBtn').style.display = shownCount &lt; displayPosts.length ? 'block' : 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderBreakingTicker(titles) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const ticker = document.getElementById('breakingTicker');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const doubled = [...titles, ...titles]; // Double untuk seamless loop</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>ticker.innerHTML = doubled.map(t =&gt; `&lt;span&gt;${t}&lt;/span&gt;`).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>async function refreshNews() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const btn = document.getElementById('refreshBtn');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>btn.classList.add('spinning');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>btn.disabled = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>await loadNews();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>btn.classList.remove('spinning');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>btn.disabled = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// NEWS MODAL</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function openNews(index) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const p = displayPosts[index];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!p) return;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalImg').src = p.image || 'https://picsum.photos/seed/banjartv-modal/800/500.jpg';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalCat').textContent = p.category;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalTitle').textContent = p.title;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalTime').textContent = p.dateFormatted;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalAuthor').textContent = p.author;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalBody').innerHTML = p.content || `&lt;p&gt;${p.excerpt}&lt;/p&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalLink').href = p.link || '#';</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalOverlay').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('newsModal').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.style.overflow = 'hidden';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function closeNews() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalOverlay').classList.remove('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('newsModal').classList.remove('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.style.overflow = '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// PENCARIAN</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function handleSearch(val) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const container = document.getElementById('searchResults');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!val.trim()) { container.style.display = 'none'; return; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const q = val.toLowerCase();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const results = allPosts.filter(p =&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>p.title.toLowerCase().includes(q) ||</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>p.category.toLowerCase().includes(q) ||</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>(p.excerpt &amp;&amp; p.excerpt.toLowerCase().includes(q))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>container.style.display = 'block';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!results.length) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>container.innerHTML = '&lt;div style="text-align:center;padding:40px 0;color:var(--text-muted);"&gt;&lt;i class="fas fa-search" style="font-size:32px;margin-bottom:12px;display:block;opacity:0.3"&gt;&lt;/i&gt;Tidak ditemukan hasil untuk "' + val + '"&lt;/div&gt;';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>container.innerHTML = results.map((p, i) =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="news-item" onclick="openSearchNews(${i})" data-search-index="${i}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="news-thumb"&gt;&lt;img src="${p.image}" alt="" loading="lazy" onerror="this.src='https://picsum.photos/seed/search${i}/300/200.jpg'"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div class="news-content"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="news-category"&gt;${p.category}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;h4&gt;${p.title}&lt;/h4&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div class="news-time"&gt;&lt;i class="far fa-clock"&gt;&lt;/i&gt; ${p.timeAgo}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;`).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>// Simpan hasil pencarian untuk openSearchNews</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>window._searchResults = results;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function openSearchNews(index) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const p = window._searchResults[index];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (!p) return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>// Cari index di displayPosts atau buat temp</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>displayPosts = window._searchResults;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>shownCount = displayPosts.length;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalImg').src = p.image || '';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalCat').textContent = p.category;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalTitle').textContent = p.title;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalTime').textContent = p.dateFormatted;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalAuthor').textContent = p.author;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalBody').innerHTML = p.content || `&lt;p&gt;${p.excerpt}&lt;/p&gt;`;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalLink').href = p.link || '#';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('modalOverlay').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('newsModal').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.style.overflow = 'hidden';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function searchTrending(kw) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('searchInput').value = kw;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>handleSearch(kw);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderTrending() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const tags = allPosts.length &gt; 0</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>? allPosts.slice(0, 10).map(p =&gt; p.title.split(/[,\-–]/)[0].trim().substring(0, 30))</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>: ['BanjarTV Live', 'HSS', 'Banjarmasin', 'Kalsel', 'Ramadan', 'Budaya Banjar'];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('trendingTags').innerHTML = tags.map(t =&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>`&lt;div class="trending-tag" onclick="searchTrending('${t.replace(/'/g, "\\'")}')"&gt;${t}&lt;/div&gt;`</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// HLS STREAMING</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function startStream() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const video = document.getElementById('videoPlayer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('playOverlay').classList.add('hidden');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('loadingSpinner').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('errorOverlay').classList.remove('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateStreamStatus('connecting', 'Menghubungkan...');</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (Hls.isSupported()) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hls = new Hls({ enableWorker: true, lowLatencyMode: true, maxBufferLength: 30, startLevel: -1 });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hls.loadSource(STREAM_URL);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hls.attachMedia(video);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hls.on(Hls.Events.MANIFEST_PARSED, () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>video.play().catch(() =&gt; {});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>onStreamStarted();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hls.on(Hls.Events.LEVEL_SWITCHED, (_, d) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>const lv = hls.levels[d.level];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (lv) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>let q = 'SD'; if (lv.height &gt;= 1080) q = 'FHD'; else if (lv.height &gt;= 720) q = 'HD'; else if (lv.height &gt;= 480) q = 'SD'; else q = 'LD';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>document.getElementById('qualityText').textContent = q + ' ' + lv.height + 'p';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>hls.on(Hls.Events.ERROR, (_, d) =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>if (d.fatal) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>if (d.type === Hls.ErrorTypes.NETWORK_ERROR) { hls.startLoad(); setTimeout(() =&gt; { if (!isPlaying) showStreamError('Koneksi terputus. Periksa internet Anda.'); }, 8000); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>else if (d.type === Hls.ErrorTypes.MEDIA_ERROR) hls.recoverMediaError();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                        </span>else showStreamError('Stream tidak tersedia.');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else if (video.canPlayType('application/vnd.apple.mpegurl')) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>video.src = STREAM_URL;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>video.addEventListener('loadedmetadata', () =&gt; { video.play().catch(() =&gt; {}); onStreamStarted(); });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>video.addEventListener('error', () =&gt; showStreamError('Format tidak didukung.'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>} else {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>showStreamError('Browser tidak mendukung HLS.');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function onStreamStarted() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>isPlaying = true;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('loadingSpinner').classList.remove('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('liveIndicator').style.display = 'flex';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('qualityBadge').style.display = 'flex';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateStreamStatus('online', 'Sedang Tayang');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('videoPlayer').volume = 0.8;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function showStreamError(msg) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('loadingSpinner').classList.remove('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('errorMsg').textContent = msg;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('errorOverlay').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('liveIndicator').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('qualityBadge').style.display = 'none';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateStreamStatus('offline', 'Tidak tersedia');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function retryStream() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (hls) { hls.destroy(); hls = null; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const v = document.getElementById('videoPlayer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>v.removeAttribute('src'); v.load();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>isPlaying = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>startStream();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateStreamStatus(s, t) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const el = document.getElementById('streamStatus');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>el.className = 'stream-status ' + s;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('streamStatusText').textContent = t;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Volume</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>let volumeVisible = false;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function toggleVolume() { volumeVisible = !volumeVisible; document.getElementById('volumeControl').classList.toggle('show', volumeVisible); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function changeVolume(v) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('videoPlayer').volume = v / 100;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('volumeIcon').className = v == 0 ? 'fas fa-volume-mute' : v &lt; 50 ? 'fas fa-volume-down' : 'fas fa-volume-up';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.addEventListener('click', e =&gt; { if (volumeVisible &amp;&amp; !e.target.closest('.volume-control') &amp;&amp; !e.target.closest('.tv-actions')) { volumeVisible = false; document.getElementById('volumeControl').classList.remove('show'); } });</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Fullscreen</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function goFullscreen() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('fullscreenVideo').classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.body.style.overflow = 'hidden';</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const fv = document.getElementById('fsVideoPlayer');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (Hls.isSupported()) { fsHls = new Hls({ enableWorker: true, lowLatencyMode: true }); fsHls.loadSource(STREAM_URL); fsHls.attachMedia(fv); fsHls.on(Hls.Events.MANIFEST_PARSED, () =&gt; { fv.play(); isFsPlaying = true; }); }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>else if (fv.canPlayType('application/vnd.apple.mpegurl')) { fv.src = STREAM_URL; fv.play(); isFsPlaying = true; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function exitFullscreen() { document.getElementById('fullscreenVideo').classList.remove('show'); document.body.style.overflow = ''; if (fsHls) { fsHls.destroy(); fsHls = null; } }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function toggleFsPlay() { const fv = document.getElementById('fsVideoPlayer'); if (isFsPlaying) { fv.pause(); } else { fv.play(); } isFsPlaying = !isFsPlaying; document.getElementById('fsPlayBtn').innerHTML = isFsPlaying ? '&lt;i class="fas fa-pause"&gt;&lt;/i&gt;' : '&lt;i class="fas fa-play" style="margin-left:2px"&gt;&lt;/i&gt;'; }</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function toggleFsMute() { const fv = document.getElementById('fsVideoPlayer'); fv.muted = !fv.muted; document.getElementById('fsVolIcon').className = fv.muted ? 'fas fa-volume-mute' : 'fas fa-volume-up'; }</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// NAVIGASI</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function switchTab(tab) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.page-section').forEach(p =&gt; p.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('page-' + tab).classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.nav-item').forEach(n =&gt; n.classList.remove('active'));</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.querySelector('.nav-item[data-tab="' + tab + '"]').classList.add('active');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>window.scrollTo({ top: 0, behavior: 'smooth' });</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>if (tab === 'pencarian') renderTrending();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function showToast(msg) {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const t = document.getElementById('toast');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('toastMsg').textContent = msg;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>t.classList.add('show');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setTimeout(() =&gt; t.classList.remove('show'), 2500);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function updateTime() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>const n = new Date();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('statusTime').textContent = String(n.getHours()).padStart(2,'0') + ':' + String(n.getMinutes()).padStart(2,'0');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// Jadwal acara</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const scheduleData = [</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '05:00', show: 'BanjarTV Pagi', desc: 'Informasi dan berita terkini', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '06:00', show: 'Selamat Pagi Banua', desc: 'Talkshow interaktif', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '07:30', show: 'BanjarTV Sehat', desc: 'Tips kesehatan', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '08:00', show: 'Berita Banjar Pagi', desc: 'Rangkuman berita terpenting', now: true },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '09:00', show: 'Dendang Banjar', desc: 'Musik daerah Kalsel', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '10:00', show: 'Kuliner Banua', desc: 'Wisata kuliner khas', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '11:00', show: 'Madihin Humor', desc: 'Lawak khas Banjar', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '12:00', show: 'Berita Banjar Siang', desc: 'Update berita siang', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '13:00', show: 'Sasirangan Corner', desc: 'Tren busana Sasirangan', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '14:00', show: 'Film Nasional', desc: 'Film Indonesia pilihan', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '16:00', show: 'BanjarTV Sport', desc: 'Olahraga lokal-nasional', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '17:00', show: 'Cerita Banua', desc: 'Dokumenter masyarakat', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '18:00', show: 'Berita Banjar Petang', desc: 'Berita utama hari ini', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '19:00', show: 'BanjarTV Hari Ini', desc: 'Magazine show', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '20:00', show: 'Dialog Khusus', desc: 'Diskusi bersama narasumber', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>{ time: '21:00', show: 'Berita Banjar Malam', desc: 'Penutup berita', now: false },</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>function renderSchedule() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>document.getElementById('scheduleList').innerHTML = scheduleData.map(s =&gt; `</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div class="schedule-item ${s.now ? 'now' : ''}"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="schedule-time"&gt;${s.time}&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="schedule-divider"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div class="schedule-info"&gt;&lt;h4&gt;${s.show}&lt;/h4&gt;&lt;p&gt;${s.desc}&lt;/p&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                    </span>${s.now ? '&lt;span class="schedule-now-badge"&gt;SEDANG TAYANG&lt;/span&gt;' : ''}</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;`).join('');</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// INIT</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>// =============================================</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>document.addEventListener('DOMContentLoaded', () =&gt; {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>updateTime();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>setInterval(updateTime, 60000);</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderSchedule();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>renderTrending();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>loadNews(); // Ambil berita real-time dari banjartv.com</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>});</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+</body>
+</html>
